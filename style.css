@@ -2,11 +2,25 @@
 Folha de estilo do site one page HTML5 e CSS3 @author ricbsan
 */
 
+/*Impotação (Google Fontes)*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 /*CSS Reset*/
 * {
     margin: 0;
     border: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/*Layout*/
+.Container {
+    margin: 0 auto;
+    background-color: #77ff00;
 }
 
 /*Smartphone Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -17,6 +31,10 @@ Folha de estilo do site one page HTML5 e CSS3 @author ricbsan
     body{
         background-color: #00ffff;
     }
+    /*Layout*/
+    .Container {
+        max-width: 540px;
+    }
 }
 
 /*STablet Portrait  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -24,6 +42,10 @@ Folha de estilo do site one page HTML5 e CSS3 @author ricbsan
 @media (min-width: 768px){
     body{
         background-color: #ff0;
+    }
+    /*Layout*/
+    .Container {
+        max-width: 720px;
     }
 }
 
@@ -33,6 +55,10 @@ Folha de estilo do site one page HTML5 e CSS3 @author ricbsan
     body{
         background-color: #f61;
     }
+    /*Layout*/
+    .Container {
+        max-width: 960px;
+    }
 }
 
 /*PC                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -40,5 +66,9 @@ Folha de estilo do site one page HTML5 e CSS3 @author ricbsan
 @media (min-width: 1200px){
     body{
         background-color: #bcffff;
+    }
+    /*Layout*/
+    .Container {
+        max-width: 1140px;
     }
 }
